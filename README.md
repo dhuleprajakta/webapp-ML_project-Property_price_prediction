@@ -49,6 +49,10 @@ property-price-prediction/
 
 
 
+![App Screenshot]([./Screenshot-2025-04-18-103142.png](https://github.com/dhuleprajakta/webapp-ML_project-Property_price_prediction/commit/debcf06afb0b47c41bedaf0c889a9aebccaebe22#diff-dd16e373283681cf5b68f1e0478aaa6324ee88d8b3ea235ccf5a1a288eb2df6a))
+
+
+
 
 
 
