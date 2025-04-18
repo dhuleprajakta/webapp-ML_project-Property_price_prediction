@@ -48,9 +48,7 @@ property-price-prediction/
 
 
 
-
-![Screenshot 2025-04-18 103142](https://github.com/dhuleprajakta/webapp-ML_project-Property_price_prediction/raw/main/Screenshot-2025-04-18-103142.png)
-
+![Property Price Predictor](https://github.com/dhuleprajakta/webapp-ML_project-Property_price_prediction/raw/main/Property_price_prediction.png)
 
 
 
