@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Price Predictor</title>
+    <style>
+        body {
+            background: #f5f6fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        h2 {
+            color: #2f3640;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 25px 35px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        label {
+            font-weight: 500;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #0984e3;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #74b9ff;
+        }
+
+        .prediction-box {
+            margin-top: 25px;
+            padding: 15px 20px;
+            background: #dff9fb;
+            border: 2px dashed #00cec9;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #2d3436;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>🏠 Property Price Predictor</h2>
+
+    <form method="post">
+        <label>Size (sq. ft)</label>
+        <input type="text" name="size_sq_ft" required>
+
+        <label>Property Type (0 = Flat, 1 = House)</label>
+        <input type="text" name="propertyType" required>
+
+        <label>Bedrooms</label>
+        <input type="text" name="bedrooms" required>
+
+        <label>Distance to AP (km)</label>
+        <input type="text" name="AP_dist_km" required>
+
+        <label>Distance to AIIMS (km)</label>
+        <input type="text" name="Aiims_dist_km" required>
+
+        <label>Distance to NDRLW (km)</label>
+        <input type="text" name="NDRLW_dist_km" required>
+
+        <label>Suburb</label>
+        <select name="suburb" required>
+            <option value="Delhi Central">Delhi Central</option>
+            <option value="Delhi East">Delhi East</option>
+            <option value="Delhi North">Delhi North</option>
+            <option value="Delhi South">Delhi South</option>
+            <option value="Delhi West">Delhi West</option>
+            <option value="Dwarka">Dwarka</option>
+            <option value="North Delhi">North Delhi</option>
+            <option value="North West Delhi">North West Delhi</option>
+            <option value="Other">Other</option>
+            <option value="Rohini">Rohini</option>
+            <option value="South West Delhi">South West Delhi</option>
+            <option value="West Delhi">West Delhi</option>
+        </select>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction is not none %}
+        <div class="prediction-box">
+            <strong>Predicted Price:</strong> ₹ {{ prediction }} lakhs
+        </div>
+    {% endif %}
+
+</body>
+</html>
