@@ -15,7 +15,7 @@ Number of Bedrooms
 
 Distance to key landmarks (AP, AIIMS, NDRLW)
 
-Suburb
+
 
 Interactive and user-friendly web interface
 
@@ -33,41 +33,7 @@ Backend: Python, Flask
 
 ML: Scikit-learn, Pandas, NumPy
 
-📦 How to Run the Project
-Clone the repository
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/property-price-prediction.git
-cd property-price-prediction
-Create a virtual environment and activate it
-
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install the dependencies
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the Flask app
-
-bash
-Copy
-Edit
-python app.py
-Open your browser and go to http://127.0.0.1:5000
-
-📷 UI Preview
-
-📌 Project Structure
-csharp
-Copy
-Edit
 property-price-prediction/
 │
 ├── app.py                 # Flask app
@@ -79,9 +45,9 @@ property-price-prediction/
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project README
 ✅ Future Enhancements
-Add login/signup functionality
 
-Connect to a live database for storage
+
+
 
 
 
